@@ -70,9 +70,7 @@ button:hover {
     border-radius: 0 0 10px 10px;
 }
 
-.sedans,
-.suvs,
-.luxury {
+.sedans, .suvs, .luxury {
     align-content: center;
     padding: 50px 50px 100px;
     width: 400px;
@@ -90,9 +88,7 @@ button:hover {
     color: hsl(179, 100%, 13%);
 }
 
-.sedans button:hover,
-.suvs button:hover,
-.luxury button:hover {
+.sedans button:hover, .suvs button:hover, .luxury button:hover {
     color: hsl(0, 0%, 95%);
 }
 
@@ -106,9 +102,7 @@ button:hover {
         padding-bottom: 50px;
     }
 
-    .sedans,
-    .suvs,
-    .luxury {
+    .sedans, .suvs, .luxury {
         height: 450px;
         padding: 50px 30px 0 50px;
         width: 210px;
@@ -128,20 +122,20 @@ button:hover {
 }
 
 /* Grid */
-body {
+.grid {
     background-color: #1B2430;
 }
 
-.grid {
+.gridbox {
     display: grid;
     gap: 15px;
-    margin: auto;
+    margin: 10px auto;
     padding: 10px;
     width: 800px;
 }
 
 .grid-box1 {
-    background-color: #C2DED1;
+    background-color: #354259;
     grid-column: 1 / span 2;
     grid-row: 1;
     padding: 150px;
@@ -155,7 +149,7 @@ body {
 }
 
 .grid-box3 {
-    background-color: #CDC2AE;
+    background-color: #C2DED1;
     grid-column: 1 / span 2;
     grid-row: 2 / span 2;
     padding: 150px;
@@ -163,13 +157,19 @@ body {
 }
 
 .grid-box4 {
-    background-color: #354259;
+    background-color: #CDC2AE;
     padding: 70px;
     margin-left: -100px;
 }
 
 .grid-box5 {
-    background-color: #F806CC;
+    background-color: #CDC2AE;
     padding: 70px;
     margin-left: -100px;
+}
+
+@media screen and (max-width: 1000px) {
+    .gridbox {
+        margin: 300px auto;
+    }
 }
