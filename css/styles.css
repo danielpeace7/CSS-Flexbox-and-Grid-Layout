@@ -122,6 +122,11 @@ button:hover {
 }
 
 /* Grid */
+header {
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+}
+
 .grid {
     background-color: #1B2430;
 }
